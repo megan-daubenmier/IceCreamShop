@@ -15,7 +15,12 @@ namespace IceCreamShop
 
             foreach (Flavor flavor in availableFlavors)
             {
-                Console.WriteLine(flavor.Name + "\n");
+                string printFlavors = flavor.Name + " - " + "Allergens: ";
+                foreach (string allergen in flavor.Allergens)
+                {
+                    printFlavors += allergen + " ";
+                }
+                Console.WriteLine(printFlavors);
             }
 
             Console.WriteLine("Cones - Before: \n");
@@ -42,7 +47,12 @@ namespace IceCreamShop
 
             foreach (Flavor flavor in availableFlavors)
             {
-                Console.WriteLine(flavor.Name + "\n");
+                string printFlavors = flavor.Name + " - " + "Allergens: ";
+                foreach (string allergen in flavor.Allergens)
+                {
+                    printFlavors += allergen + " ";
+                }
+                Console.WriteLine(printFlavors);
             }
 
             Console.WriteLine("Cones - After: \n");

@@ -8,7 +8,7 @@ namespace IceCreamShop
     {
         public int Compare (Flavor x, Flavor y)
         {
-            return string.Compare(x.Name, y.Name);
+            return x.Allergens.Count - y.Allergens.Count;
         }
     }
 }
